@@ -12,7 +12,7 @@ const state = {
         gameVelocity: 1000,
         hitPosition: 0,
         result: 0,
-        curretTime: 5,
+        curretTime: 60,
         lives: 3,
         restartCount: 0,
     },
@@ -82,7 +82,7 @@ function restartGame() {
     state.values.restartCount++;
 
     if (state.values.restartCount < 3) {
-        state.values.curretTime = 5;
+        state.values.curretTime = 60;
         state.values.result = 0;
 
         state.view.timeLeft.textContent = state.values.curretTime;
